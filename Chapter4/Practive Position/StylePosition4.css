@@ -1,0 +1,25 @@
+.bar {
+  margin: 5rem auto;
+  width: 20rem;
+  height: 1rem;
+  background-color: rgb(136, 138, 135);
+  border-radius: 5px;
+  position: relative;
+}
+.bar-progress {
+  height: 100%;
+  width: 50%;
+  /* kế thừa thằng cha .bar */
+  border-radius: inherit;
+  background-color: green;
+}
+.bar-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
