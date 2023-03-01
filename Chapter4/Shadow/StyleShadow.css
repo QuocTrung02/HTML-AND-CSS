@@ -1,0 +1,80 @@
+/* Học về Gradient */
+.gradient {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(to right bottom, red, blue);
+  /* background-image: linear-gradient(to right bottom ,red 30%,blue 50%); */
+  /* Hướng Từ trái sang phải: to right từ trên xuống dưới :to boottom
+      từ trái qua phải rồi chạy xuống dưới: to right bottom còn lại 
+      tương tự  */
+}
+/* ------------------------------------------------------------------- */
+
+.gradient--title {
+  font-size: 5rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right top, red, blue);
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  /* trong suốt */
+  color: transparent;
+  /* ra chữ như mong muốn */
+  -webkit-background-clip: text;
+  /* clip sau sẽ biết */
+  background-clip: text;
+}
+.background-overlay-gradient {
+  width: 100vw;
+  height: 100vh;
+  /* cái nào code trước thì nằm trên đoạn code sau  */
+  /* và muốn nhìn thấy hình sau background thì ta xài mã màu rgba() */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(216, 179, 59, 0.886),
+      rgba(41, 201, 140, 0.847)
+    ),
+    url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+  /* phủ hết khung hình */
+  background-size: cover;
+}
+/* ------------------------------------------------------------------- */
+
+/* Bài 4 opacity-visibility-display-none  */
+.opacity-visibility-display-none {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(to right bottom, red, blue);
+  /* thuộc tính hiện con trỏ*/
+  cursor: pointer;
+  /* vẫn chiếm diện tích nhưng vẫn nhấn vô được */
+  opacity: 0;
+  /* vẫn chiếm diện tích nhưng không nhấn vào được */
+  visibility: hidden;
+  /* biến mất hoàn toàn không chiếm diện tích và nhấn vô đc  */
+  display: none;
+}
+/* ------------------------------------------------------------------- */
+
+/* Bài 5: shadow */
+.shadow {
+  width: 20rem;
+  height: 20rem;
+  background-color: black;
+  margin: 5rem auto;
+  /* Muốn tạo bóng nằm về phía bên trái + phải - thì xử lý x
+         Muốn tạo bóng nằm vế phía dưới + trên - thì xữ lý y
+         Muốn tạo độ mờ :blur
+         muốn tạo như border dừng :scale
+         Muốn tạo bóng màu gì vd:Blue     */
+  box-shadow: 0 0 0 0 red;
+}
+/* Tạo bóng cho chữ */
+.shadow--title {
+  margin-top: 5rem;
+  font-size: 5rem;
+  font-weight: bold;
+  /* độ bóng cho chữ thì không có scale */
+  text-shadow: 5px 5px 10px red;
+}
+/* ------------------------------------------------------------------- */
